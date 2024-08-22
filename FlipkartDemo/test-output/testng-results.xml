@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-21T17:44:16 IST" name="Suite" finished-at="2024-08-21T17:44:49 IST" duration-ms="33538">
+    <groups>
+    </groups>
+    <test started-at="2024-08-21T17:44:16 IST" name="Test" finished-at="2024-08-21T17:44:49 IST" duration-ms="33538">
+      <class name="com.common.MercedesBenz">
+        <test-method signature="openURL()[pri:0, instance:com.common.MercedesBenz@5b7a5baa]" started-at="2024-08-21T17:44:16 IST" name="openURL" finished-at="2024-08-21T17:44:49 IST" duration-ms="33491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.common.MercedesBenz@5b7a5baa]" started-at="2024-08-21T17:44:49 IST" name="quit" finished-at="2024-08-21T17:44:49 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.common.MercedesBenz -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
