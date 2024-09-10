@@ -40,6 +40,7 @@ public class MercedesBenz extends FlipkartCommonTest {
 		System.out.println("Gelandewagen Mercedes Detail Page clicked");
 		
 		switchTab();
+		Thread.sleep(1500);
 		
 		JavascriptExecutor configureG580 = (JavascriptExecutor) driver;
 		WebElement configureG580Clicked = (WebElement) configureG580.executeScript(
@@ -47,11 +48,17 @@ public class MercedesBenz extends FlipkartCommonTest {
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", configureG580Clicked);
 		System.out.println("Configure G 580 link clicked");
 		
-		
+		/*
+		 * JavascriptExecutor acceptCookies = (JavascriptExecutor) driver; WebElement
+		 * acceptCookiesClicked = (WebElement) acceptCookies.executeScript(
+		 * "return document.querySelector('body.generic-template > cmm-cookie-banner').shadowRoot.querySelector('div.cmm-cookie-banner.cmm-cookie-banner--B > div.cmm-cookie-banner__wrapper.visible > div.cmm-cookie-banner__content > cmm-buttons-wrapper > div.buttons-wrapper > div.button-group > wb7-button.button.button--accept-all.wb-button.hydrated').shadowRoot.querySelector('button.button')"
+		 * ); ((JavascriptExecutor) driver).executeScript("arguments[0].click();",
+		 * acceptCookiesClicked); System.out.println("Cookies accept button clicked");
+		 */
 		
 	}
 	
 }
 
 
-//('body.generic-template > cmm-cookie-banner').shadowRoot.querySelector('div.cmm-cookie-banner.cmm-cookie-banner--B > div.cmm-cookie-banner__wrapper.visible > div.cmm-cookie-banner__content > cmm-buttons-wrapper > div.buttons-wrapper > div.button-group > wb7-button.button.button--accept-all.wb-button.hydrated')
+//document.querySelector('body.generic-template > cmm-cookie-banner').shadowRoot.querySelector('div.cmm-cookie-banner.cmm-cookie-banner--B > div.cmm-cookie-banner__wrapper.visible > div.cmm-cookie-banner__content > cmm-buttons-wrapper > div.buttons-wrapper > div.button-group > wb7-button.button.button--accept-all.wb-button.hydrated').shadowRoot.querySelector('button.button')
