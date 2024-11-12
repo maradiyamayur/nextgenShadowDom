@@ -32,18 +32,6 @@ public class FlipkartLogin extends FlipkartCommonTest {
 		// scrollDown();
 		switchTab();
 
-		/*
-		 * List<WebElement> dynamicElement =
-		 * driver.findElements(By.xpath("//button[@class='QqFHMw vslbG+ In9uk2']")); if
-		 * (dynamicElement.size()!=0) {
-		 * driver.findElement(By.xpath("//button[@class='QqFHMw vslbG+ In9uk2']")).click
-		 * (); System.out.println("Add to Cart button clicked"); } else {
-		 * //driver.findElement(By.xpath("//button[@class='QqFHMw AMnSvF v6sqKe']")).
-		 * click(); System.out.println("Notify Me button clicked"); }
-		 */
-		// driver.findElement(By.xpath("//button[@class='QqFHMw vslbG+
-		// In9uk2']")).click();
-
 		if (driver.findElement(By.xpath("//button[@class='QqFHMw AMnSvF v6sqKe']")).isDisplayed()) {
 			
 			System.out.println("Case 1 - Notify Button check");
@@ -74,6 +62,8 @@ public class FlipkartLogin extends FlipkartCommonTest {
 
 	public void searchCloths() {
 
+		driver.findElement(By.xpath("//input[@class='zDPmFV']")).sendKeys("van heusen shirt");
+		System.out.println("Text entered to search Cloths ");
 	}
 }
 
